@@ -1,0 +1,9 @@
+.video {
+  width: inherit;
+  vertical-align: middle;
+  position: relative;
+}
+.video-media {
+  width: inherit;
+  vertical-align: middle;
+}

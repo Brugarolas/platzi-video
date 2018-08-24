@@ -1,0 +1,7 @@
+.main {
+  display: block;
+  margin-left: 200px;
+  padding: 40px;
+  box-sizing: border-box;
+  width: calc(100% - 200px);
+}

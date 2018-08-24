@@ -1,0 +1,6 @@
+.video-player {
+  width: 100%;
+  min-width: 560px;
+  position: relative;
+  background: #000;
+}

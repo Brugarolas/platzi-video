@@ -1,0 +1,84 @@
+.volume {
+  display: inline-block;
+  float: left;
+  width: 24px;
+  height: 24px;
+  padding: 4px 10px;
+  box-sizing: content-box;
+}
+
+.volume-button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  outline: none;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+.volume-icon {
+  font-size: 24px;
+}
+
+.volume-bar {
+  display: block;
+  position: absolute;
+  top: -110px;
+  left: -15px;
+  width: 150px;
+  margin: 0;
+  padding: 10px;
+  transform: rotate(270deg);
+  background: #0003;
+  border-radius: 0 8px 8px 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .3s ease-in-out .3s, opacity .3s ease-in-out .3s;
+}
+.volume-bar-input {
+  width: 100%;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.volume-bar:hover, .volume:hover .volume-bar {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity .3s ease-in-out 0s;
+}
+
+.muted-bar {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 27px;
+}
+.muted-bar::after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  background-color: #fff;
+  width: 3px;
+  height: 35px;
+  top: -8px;
+  right: 10px;
+  transform: rotate(45deg);
+  border-radius: 5px;
+  border: 2px solid #000;
+}

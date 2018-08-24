@@ -1,0 +1,46 @@
+.modal {
+  position: relative;
+  background-color: white;
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.close-button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  outline: none;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+
+  /* Style */
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.icon-close {
+  font-size: 24px;
+  color: #fff;
+}

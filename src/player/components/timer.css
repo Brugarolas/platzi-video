@@ -1,0 +1,7 @@
+.timer {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  float: right;
+  margin: 6px 10px;
+  font-size: 16px;
+}

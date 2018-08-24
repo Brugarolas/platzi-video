@@ -1,0 +1,32 @@
+.search {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 16px;
+  color: #444;
+}
+
+.search-input {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 20px 5px 45px;
+  background-color: #eee;
+  font-weight: 700;
+  border: none;
+  transition: all .3s ease-in-out;
+  width: 180px;
+  box-sizing: content-box;
+  border-radius: 4px;
+}
+.search-input:focus {
+  width: 320px;
+  box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+.search-input::placeholder {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
